@@ -1,0 +1,282 @@
+/* Reset and global styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navigation styles */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #288f9c;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: 1200px; /* Adjust as needed */
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #59ff05;
+  transition: 0.3s;
+}
+
+nav .logo a:hover {
+  color: #830aed;
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+
+nav .checkbox i {
+  font-size: 2rem;
+  color: #59ff05;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fcfdff;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: #ca8a04;
+  border-bottom-color: #ca8a04;
+  color: #ca8a04;
+}
+
+/* Section styles */
+.section {
+  background-color: #3298bd;
+  padding: 1rem;
+}
+
+.section__container {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: #f6f8fc;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: #fcfdff;
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.description {
+  line-height: 1.5rem;
+  color: #f6f8fc;
+  margin-bottom: 2rem;
+}
+
+.action__btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.action__btns button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  outline: none;
+  border: 2px solid #59ff05;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.hire__me {
+  background-color: #59ff05;
+  color: #ffffff;
+}
+
+.hire__me:hover {
+  background-color: #830aed;
+}
+
+.portfolio {
+  color: #59ff05;
+}
+
+.portfolio:hover {
+  background-color: #830aed;
+  color: #ffffff;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: min(25rem, 90%);
+  border-radius: 100%;
+}
+
+/* Footer styles */
+footer {
+  background-color: #3298bd;
+  color: #fcfdff;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+.social__links a {
+  color: #fcfdff;
+  font-size: 2rem;
+  margin: 0 1rem;
+  transition: color 0.3s;
+}
+
+.social__links a:hover {
+  color: #59ff05;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* About section styles */
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.intro-text {
+  max-width: 600px;
+  text-align: right;
+}
+
+.intro-text h2 {
+  margin-top: 30;
+}
+
+.intro-text p {
+  text-align: center;
+  margin-top: 0px;
+}
+
+#skills,
+#experience,
+#education {
+  padding: 20px 0;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+.skills-list,
+.experience-list,
+.education-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skill,
+.experience-item,
+.education-item {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 45%;
+}
+
+.skill h3,
+.experience-item h3,
+.education-item h3 {
+  margin-top: 0;
+  color: #555;
+}
